@@ -1,0 +1,105 @@
+@import "_reset";
+@import url('https://fonts.googleapis.com/css?family=Chonburi|Fredericka+the+Great|Roboto:300|Sigmar+One&display=swap');
+
+$primary-color:#648f5a;
+$neutral-color: #e3e8e3;
+$accent-color:#194529;
+
+.App {
+  background-image: url('../resources/background.jpeg');
+  min-height: 60rem;
+  background-size: cover;
+  // padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  main, .user-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $neutral-color;
+    background-color: #09181185;
+    box-shadow: 2px 2px 5px #e3e8e3,
+      -2px -2px 5px #e3e8e3;
+    padding: 8rem;
+    h1{
+      font-family: 'Chonburi', cursive;
+      font-size: 80px;
+      padding-bottom: 2rem;
+      width: fit-content;
+    }
+    span{
+      button{
+        font-family: 'Roboto', sans-serif;
+        color: $neutral-color;
+        background-color: inherit;
+        border: none;
+        font-size: 18px;
+        padding: 1rem;
+        margin: 1rem;
+        &:hover{
+          background-color: $neutral-color;
+          color: $accent-color;
+          font-weight: bold;
+        }
+      }
+    }
+    input{
+      margin: .5rem;
+      padding: .5rem;
+      font-family: 'Roboto', sans-serif;
+      width: 80%;
+    }
+    .submit-button{
+      background-color: inherit;
+      color: $neutral-color;
+      width: 40%;
+      &:hover{
+        background-color: $accent-color;
+        font-weight: bold;
+        border: none;
+      }
+    }
+  }
+  .profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: normal;
+    background-color: #11311dc0;
+    header{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      h1{
+        font-family: 'Chonburi', cursive;
+      }
+    }
+    font-size: 60px;
+    color: $neutral-color;
+    padding: 2rem;
+    .main-content{
+      margin: 4rem;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .card{
+          background-color: $primary-color;
+          min-height: 10rem;
+          min-width: 10rem;
+          padding: 1rem;
+          margin: 1rem;
+        }
+      }
+
+    }
+  }
+}
+
